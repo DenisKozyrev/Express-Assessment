@@ -1,4 +1,13 @@
 <div>
   <h1>First express app</h1>
-  <p>Hello express</p>
+  {{{getSpan queryParams}}}
+  <p>Hello</p>
+
+  <form action="/api" method="post">
+    <label for="a">A</label>
+    <input type="text" name="a" />
+    <label for="b">B</label>
+    <input type="text" name="b" />
+    <button type="submit">Click</button>
+  </form>
 </div>

@@ -1,4 +1,5 @@
 import express from "express";
+import { getHomePage, postJson, getImage } from "./api.controller.js";
 
 const apiRouter = express.Router();
 
@@ -9,8 +10,10 @@ const apiRouter = express.Router();
 //   res.sendFile(homePageUrl);
 // });
 
-apiRouter.get("/api", (req, res) => {
-  res.render("home", { title: "home page" });
-});
+apiRouter.get("/", getHomePage);
+
+apiRouter.post("/", postJson);
+
+apiRouter.get("/image", getImage);
 
 export default apiRouter;
