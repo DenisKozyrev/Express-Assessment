@@ -15,7 +15,7 @@ export const postJson = (req, res) => {
 };
 
 export const getImage = (req, res) => {
-  res.sendFile("../src/screenshot.png");
+  res.download("./src/images/screenshot.png");
 };
 
 export const get404Page = (req, res) => {
